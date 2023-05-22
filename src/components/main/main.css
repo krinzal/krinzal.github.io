@@ -1,0 +1,324 @@
+* {
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+.main {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  color: white;
+  image-rendering: pixelated;
+  text-align: center;
+  max-height: calc(100vh - 75px);
+  min-width: calc(100vw - 69px);
+  min-height: calc(100vh - 75px);
+  max-width: calc(100vw - 69px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+body:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(18, 16, 16, 0) 50%,
+    rgba(0, 0, 0, 0.25) 50%
+  );
+  background-size: 100% 2px;
+  background-repeat: repeat;
+  z-index: 1000000;
+  pointer-events: none;
+}
+
+@keyframes yess {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.welcwrap {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: yess 3.5s ease-in;
+}
+.welcwrap h1 {
+  font-size: 4rem;
+}
+
+.mainwrap {
+  image-rendering: pixelated;
+  animation: yes 0.5s ease;
+  padding: 15px;
+}
+
+.gen {
+  float: left;
+}
+
+.apps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  padding-right: 5px;
+  float: right;
+}
+
+.app-icon i:hover {
+  color: rgba(0, 217, 255, 0.685);
+}
+i:hover {
+  color: rgba(0, 217, 255, 0.685);
+}
+
+.app-icon i {
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  float: none;
+  clear: both;
+  display: block;
+  margin: 15px;
+  margin-right: 0;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.5s ease, color 0.5s ease;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.app-icon span {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  display: block;
+  text-align: center;
+  margin-top: -10px;
+  font-weight: 700;
+  color: #f1f1f1;
+  width: 60px;
+  margin-left: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: -5px;
+}
+
+@keyframes yes {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* TIME JS */
+
+.timewrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.info {
+  text-align: right;
+  color: #f1f1f1;
+  height: 50px;
+  font-size: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  font-weight: 500;
+
+  animation: yes 0.5s ease;
+}
+.info-icon {
+  margin-left: 10px;
+  transition: color 0.5s ease;
+  color: #f1f1f1;
+  padding: 6px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  float: right;
+}
+.infowrap {
+  float: left;
+}
+@media screen and (min-width: 1100px) {
+  .timewrapper {
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+/* Popups */
+
+.modal {
+  height: auto;
+  width: auto;
+  position: absolute;
+  max-width: inherit;
+  max-height: inherit;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  background-color: black;
+  resize: both;
+  overflow: auto;
+  min-width: 500px;
+  min-height: 350px;
+}
+
+.window-title {
+  text-transform: uppercase;
+  color: #fff;
+  float: left;
+  padding: 8px 10px;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.modal-header {
+  display: flex;
+  height: auto;
+  width: auto;
+  background-color: #3a3a3a;
+  width: 100%;
+  color: #fff;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: move;
+}
+
+.button-wrap {
+  cursor: pointer;
+  height: 31px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 0 15px;
+  font-size: large;
+  transition: background-color 0.5s ease;
+}
+
+.button-wrap:hover{
+  background-color: #242323;
+}.button-wrap:hover i{
+  color: lightcoral;
+}
+.modal-content {
+  color: white;
+}
+.modal span{
+  color: #ADDAE6;
+}
+.modal-content p {
+  max-height: 270px;
+  max-width: 100%;
+  min-width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.resize-handle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  cursor: nwse-resize;
+  z-index: 100000;
+}
+
+.work-body{
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-item{
+  float: left;
+	padding: 5px;
+	text-align: center;
+	background-color: #333;
+	margin: 15px;
+	border-radius: 4px;
+}
+.work-item img {
+  width: 100%;
+  height: 200px;
+  border-radius: 4px;
+  background-color: #111;
+}
+
+@media screen and (max-width:1015px) {
+ .modal{
+  resize: none;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+ } 
+}
+
+@media screen and (max-width:359px){
+  .modal-content{
+    font-size: small;
+  }
+}
+
+@media screen and (max-width:569px){
+  .welc h1{
+    font-size: 47px;
+  }  .welc p{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:446px){
+  .welc{
+    display: none;
+}
+}
