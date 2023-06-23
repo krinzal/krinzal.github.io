@@ -74,7 +74,7 @@ const Main = (props) => {
           <div className="clearfix"></div>
           <div className="app-icon social">
             <a
-              href="https://github.com/krin-zal"
+              href="https://github.com/krinzal"
               target="_blank"
               rel="noopener"
             >
@@ -96,7 +96,7 @@ const Main = (props) => {
           <div className="clearfix"></div>
           <div className="app-icon social">
             <a
-              href="https://youtu.be/dQw4w9WgXcQ"
+              href="https://github.com/krinzal"
               target="_blank"
               rel="noopener"
             >
